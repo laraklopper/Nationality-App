@@ -47,16 +47,12 @@ export default function Apicall() {//Export the Apicall component
      // Render the component's JSX
 
     return (
-        <div id='apiCallContainer' className='d-flex flex-column align-items-center justify-content-center'>
+        <div id='apiCallContainer' role='region' aria-label="API Call Section">
             <form id='apiForm'>
-                <Row>
+                <Row id='formRow1'>
                     <Col  className='col'>
-                    <label className='label' id='nameLabel'>Enter a name to get the country</label>
-                    </Col>
-                        {/* Display the 'country' state variable in a paragraph element */}
-                </Row>
-                <Row>
-                    <Col className='col'>
+                    <label htmlFor='nameInput' className='label' id='nameLabel'>
+                       <p className='labelText'>Enter a name to get the country</p>
                         <input
                         type='text'
                         value={name}
@@ -69,6 +65,7 @@ export default function Apicall() {//Export the Apicall component
                         aria-required='true'        
                         placeholder='Enter a name'
                         />
+                        </label>
                         </Col>
                 </Row>
                 <Row>
