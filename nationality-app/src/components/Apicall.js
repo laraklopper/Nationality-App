@@ -1,12 +1,13 @@
 import React, { useRef, useState, useEffect } from 'react';// Import the React module to use React functionalities
 import Button from 'react-bootstrap/Button';//Import Button component from bootstrap library
 import Form from 'react-bootstrap/Form';//Import Form component from bootstrap library
-import Stack from 'react-bootstrap/Stack';//Import Stack component from bootstrap library
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 
 // Apicall function component
 export default function Apicall() {//Export the Apicall component
-    // Load .env values
+   
     
   //==============STATE AND REFS================
     // Set up state variables 'country' and 'name' 
@@ -15,8 +16,10 @@ export default function Apicall() {//Export the Apicall component
     const [name, setName] = useState(""); // 'country' stores the fetched country data, 'name' stores the input value
 
     // Create a ref using the useRef hook
-    const inputRef = useRef(null);//Ref is attatched to the input element   
-    
+    const inputRef = useRef(null);//Ref is attatched to the input element  
+
+    //===============API CALL================
+    // Define an async function 'fetchData' to fetch the API data
         const fetchData = async () => {// Define an async function 'fetchData' to fetch the API data
             try {
                 const response = await fetch(`https://api.nationalize.io?name=${name}`);//Fetch Data from the API        
@@ -38,42 +41,55 @@ export default function Apicall() {//Export the Apicall component
 
 
     return (
-        <div>
-        
-            {/* Input element that binds its value to the 'name' state variable and calls handleInputChange on change */}
-            <Stack gap={3} direction='horizontal' style={{justifyContent:"center", alignContent:'center'}}>
-                <Form id='apiForm'>                  
-                        <Form.Group  controlId="Email">
-                            <Form.Control 
-                                type="text"  
-                                value={name}  
-                                onChange={(e)=> setName(e.target.value)} 
-                                ref={inputRef}
-                                autoComplete='off'
-                                aria-label='name-input'
-                                required
-                                id='nameInput'
-                                aria-required='true'
-                                placeholder='Enter a name'
-                              />
-                        </Form.Group>
-                        <Button 
+        <div id='apiCallContainer' className='d-flex flex-column align-items-center justify-content-center'>
+            <form id='apiForm'>
+                <Row>
+                    <Col  className='col'>
+                    <label className='label' id='nameLabel'>Enter a name to get the country</label>
+                    </Col>
+                    
+                        {/* Display the 'country' state variable in a paragraph element */}
+                </Row>
+                <Row>
+                    <Col className='col'>
+                        <input
+                        type='text'
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                        ref={inputRef}
+                        autoComplete='off'
+                        required
+                        id='nameInput'
+                        aria-label='name-input'
+                        aria-required='true'        
+                        placeholder='Enter a name'
+                        />
+                        </Col>
+                </Row>
+                <Row>
+                    <Col className='col'>
+                        <Button
                             type='button' 
                             variant='primary'
                             id='fetchButton'
                             onClick={fetchData}
                             aria-label='fetch-button'
-                           
-                            >
-                                FETCH DATA
+                            role='button'>
+                            FETCH DATA
                         </Button>
-                </Form>
-            </Stack>
-        <div>
-                {/* Display the value of the 'country' state variable */}
-                {country && <p className='output'>{JSON.stringify(country)}</p>}
-        </div>
-           
+                        </Col>
+                </Row>
+            </form>
+            <div id='outputContainer'>
+            <Row id='outputRow'>
+                <Col className='col' id='outputCol'>
+                    <h2 className='h2'>Country Data</h2>  
+                    {/* Display the fetched country data */}
+                    {/* Display the value of the 'country' state variable */}
+                    {country && <p className='output'>{JSON.stringify(country)}</p>}
+                </Col>
+            </Row>
+            </div>
         </div>
     );
 }
