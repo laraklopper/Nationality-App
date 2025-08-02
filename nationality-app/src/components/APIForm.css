@@ -7,47 +7,65 @@ display: flex;
     margin: 10px 0px 10px 0px;
     border-radius: 5px;
     background-color: #8CBB2F;
+    width: fit-content
 }
 /* API FORM */
 #apiForm {
-    width: 400px;
+    width: 360px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 10px 5px 10px 5px;
+    padding: 10px 0px 10px 0px;
     margin: 10px 0px 10px 0px;
     border: solid 3px #000000;
     border-radius: 5px;
     background-color: #98CA33;
 }
+#formRow1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0px 0px 10px 0px;
+}
+#formRow2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0px 0px 10px 0px;
+}
 /*  */
-#nameLabel {
-   
-    font-weight: 700;
-    margin-bottom: 10px;
-    text-transform: uppercase;
+#nameLabel {   
+    margin: 5px 0px 5px 0px;
+    padding: 5px 0px 5px 0px;
 }
 #labelText {
     margin: 0;
     padding: 0;
-    font-size: 16px;
+    font-size: 18px;
     color: #000000;
-    font-family: "Funnel Display", sans-serif;
+    font-family: "Signika", sans-serif;
     text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
 }
 /* INPUT */
 #nameInput {
-    width: 250px;
-    padding: 10px;
+    width: 200px;
+    padding: 7px 2px 7px 2px;
     margin: 10px;
     border-radius: 5px;
     border: none;
     text-align: center;
     text-transform: uppercase;
-    font-family: "Funnel Display", sans-serif;
+    font-family: "Signika", sans-serif;
     font-weight: 700;
     border: #000000 2px solid;
+    font-size: 18px;
 }
 
 
@@ -58,6 +76,6 @@ display: flex;
     margin: 10px;
     padding: 10px;
     color: #000000;
-    font-family: "Funnel Display", sans-serif;
+    font-family: "Martian Mono", monospace;
     font-weight: 700;
 }

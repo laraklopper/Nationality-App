@@ -11,6 +11,10 @@ html, body {
   display: flex;
   justify-content: center;
 }
+#root{
+      width: fit-content;
+        height: fit-content;
+}
 /* LAYOUT */
 #container{
   display: flex;
@@ -18,6 +22,7 @@ html, body {
   justify-content: center;
   background-color: #779F28;
   padding: 10px;
+  border-radius: 5px;
   margin: 10px ;
 }
 /* Section1 */

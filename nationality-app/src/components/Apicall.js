@@ -52,7 +52,7 @@ export default function Apicall() {//Export the Apicall component
                 <Row id='formRow1'>
                     <Col  className='col'>
                     <label htmlFor='nameInput' className='label' id='nameLabel'>
-                       <p className='labelText'>Enter a name to get the country</p>
+                       <p id='labelText'>Enter a name to get the country</p>
                         <input
                         type='text'
                         value={name}
@@ -68,7 +68,7 @@ export default function Apicall() {//Export the Apicall component
                         </label>
                         </Col>
                 </Row>
-                <Row>
+                <Row id='formRow2'>
                     <Col className='col'>
                         <Button
                             type='button' 
