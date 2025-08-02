@@ -7,8 +7,7 @@ import Stack from 'react-bootstrap/Stack';//Import Stack component from bootstra
 // Apicall function component
 export default function Apicall() {//Export the Apicall component
     // Load .env values
-    const baseUrl = process.env.REACT_APP_API_BASE_URL; // Set the base URL from environment variables
-    const defaultName = process.env.REACT_APP_DEFAULT_NAME || '';// Set the base URL and default name from environment variables
+    
   //==============STATE AND REFS================
     // Set up state variables 'country' and 'name' 
     //set(State)Function updates the state to change the initial value
@@ -20,7 +19,7 @@ export default function Apicall() {//Export the Apicall component
     
         const fetchData = async () => {// Define an async function 'fetchData' to fetch the API data
             try {
-                const response = await fetch(`${baseUrl}?name=${defaultName}`);//Fetch Data from the API        
+                const response = await fetch(`https://api.nationalize.io?name=${name}`);//Fetch Data from the API        
                 const data = await response.json();// Convert the response to JSON
 
                 setCountry(data.country[0]);// Update the 'country' state variable with the fetched data
@@ -56,7 +55,9 @@ export default function Apicall() {//Export the Apicall component
                         </Form.Group>
                         <Button 
                             type='button' 
+                            variant='primary'
                             className="btn btn-info" 
+                            id='fetchButton'
                             onClick={fetchData}>
                                 FETCH DATA
                         </Button>

@@ -2,11 +2,20 @@ html, body {
   margin: 0;
   padding: 0;
 }
-.body{
+#body{
   margin: 0px;
   padding: 0px;
   width: 98%;
-  font-family: 'Times New Roman', Times, serif;
+  height: 100%;
+  background-color: #4B6419;
+  display: flex;
+  justify-content: center;
+}
+#container{
+  
+      background-color: #779F28;
+        padding: 10px;
+        margin: 10px 0px 0px 0px;
 }
 /* Header */
 #header{
@@ -17,11 +26,18 @@ html, body {
   margin-right: 5px;
   padding: 15px;
   text-align: center;
+  display: grid;
+  justify-content: center;
+  background-color: #98CA33;
+  
 
 }
+/* Section1 */
 #section1{
   text-align: center;
   margin-top: 10px;
+  background-color: #779F28;
+  padding: 15px;
 }
 .h1{
   text-align: center;
@@ -33,16 +49,19 @@ html, body {
 .output{
   margin-top: 25px;
 }
-.btn{
+/* Button */
+#fetchButton{
+  width: 180px;
   margin: 10px;
-  padding: auto;
-  width: 200px;
+  padding: 10px;
+  font-family: "Funnel Display", sans-serif;
 }
 #apiForm{
-  width: 100%;
+  width: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #404040;
+  padding: 10px;
+  background-color: #98CA33;
 }
