@@ -1,24 +1,37 @@
 # NATIONALITY API CALL
+
 ## TABLE OF CONTENTS
 1. [WHAT_THE_APPLICATION_DOES](#what-the-application-does)
 2. [HOW_TO_START_THE_APPLICATION](#how-to-start-the-application)
 3. [STYLING](#styling)
 4. [REFERENCES](#references)
-Level 2 LT14 
+ 
 ## WHAT THE APPLICATION DOES
 
-The application is a front-end react.js application which uses `https://nationalize.io/` to make a third party API call which provides data relating to the nationality of the name entered in the form.
+The application only includes front-end code using react.js
+```
+npx create-react-app@latest nationality-app
+```
+The application  uses `https://nationalize.io/` to make a third party API call which provides data relating to the nationality of the name entered in the form.
 
 ## HOW TO START THE APPLICATION
 
-To start the application use npm start in the `terminal` (or Command Line Interface `CLI`) 
+To clone the app from github use `git clone` in the `terminal` (or Command Line Interface `CLI`) 
+```
+git clone [url]
+```
+To install the necessary packages use `npm install` in the `terminal` (or Command Line Interface `CLI`) 
+```
+npm i
+```
+To start the application use `npm start` in the `terminal` (or Command Line Interface `CLI`) 
 ```
 npm start 
 ```
 
 ## STYLING
 
-the application uses bootstrap and google fonts and css for styling.
+The application uses bootstrap and google fonts and css for styling.
 
 **BOOTSTRAP**
 ```
@@ -37,18 +50,24 @@ In the `/public/index.html` file
 ```
   font-family: "Martian Mono", monospace;
 ```
+Used in the output
 **Alkatra: CSS class for a variable style**
 ```
 font-family: "Alkatra", system-ui;
 ```
+Used in the header
+
 **Permanent Marker: CSS class**
 ```
   font-family: "Permanent Marker", cursive;
 ```
+Used in the output heading
 **Signika: CSS class for a variable style**
+
 ```
     font-family: "Signika", sans-serif;
 ```
+Used in form tags
 ## REFERENCES
 
 - https://nationalize.io/
@@ -56,3 +75,4 @@ font-family: "Alkatra", system-ui;
 - https://react-bootstrap.netlify.app/
 - https://color.adobe.com/create/color-wheel
 - https://www.w3schools.com/colors/colors_groups.asp
+- https://react.dev/blog/2023/03/16/introducing-react-dev
