@@ -16,7 +16,8 @@
 /* Text */
 .h2 {
     text-transform: uppercase;
-    font-family: "Signika", sans-serif;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
     color: #404040;
 }
 .output {
