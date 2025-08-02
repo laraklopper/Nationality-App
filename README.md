@@ -13,6 +13,7 @@ The application only includes front-end code using react.js
 npx create-react-app@latest nationality-app
 ```
 The application  uses `https://nationalize.io/` to make a third party API call which provides data relating to the nationality of the name entered in the form.
+The application also includes  Accessible Rich Internet Applications (ARIA)`  attributes to make the application more accessible.
 
 ## HOW TO START THE APPLICATION
 
@@ -77,3 +78,4 @@ Used in form tags
 - https://www.w3schools.com/colors/colors_groups.asp
 - https://react.dev/blog/2023/03/16/introducing-react-dev
 - https://www.w3schools.com/tags/tag_meta.asp
+- https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Guides
