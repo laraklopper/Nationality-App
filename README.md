@@ -76,3 +76,4 @@ Used in form tags
 - https://color.adobe.com/create/color-wheel
 - https://www.w3schools.com/colors/colors_groups.asp
 - https://react.dev/blog/2023/03/16/introducing-react-dev
+- https://www.w3schools.com/tags/tag_meta.asp
