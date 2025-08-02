@@ -1,0 +1,44 @@
+/* API FORM */
+#apiForm {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px 0px 10px 0px;
+    border-radius: 5px;
+    background-color: #98CA33;
+}
+
+#nameInput {
+    width: 250px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Funnel Display", sans-serif;
+    font-weight: 700;
+    border: #000000 2px solid;
+}
+
+#nameLabel {
+    color: #000000;
+    font-family: "Funnel Display", sans-serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+/* Buttons */
+#fetchButton {
+    width: 180px;
+    margin: 10px;
+    padding: 10px;
+    color: #000000;
+    font-family: "Funnel Display", sans-serif;
+    font-weight: 700;
+}

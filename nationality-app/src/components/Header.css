@@ -6,3 +6,31 @@
     align-items: center;
     margin: 10px;
 }
+#headerCol{
+    margin: 0px;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+}
+/* Header */
+#header {
+    width: 600px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: #98CA33;
+}
+
+/* Text */
+#mainTitle {
+    text-align: center;
+    margin: 5px;
+    color: #404040;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 800;
+}

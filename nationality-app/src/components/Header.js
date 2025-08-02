@@ -11,11 +11,12 @@ export default function Header() {//Export Header function component
     // Render a header element with an id and role
     <Row id='headerRow' aria-labelledby="main-title">
     <header id='header' role='banner' aria-label="Main header">
-     
+      {/* Render a column with an id and className */}
           <Col id='headerCol'>
-          <h1 className='h1' id="mainTitle">NATIONALITY API</h1>
+            <h1  id="mainTitle" aria-label='mainTitle'>
+              NATIONALITY API
+            </h1>
           </Col>
-       
     </header>
      </Row >
   )

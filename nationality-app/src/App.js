@@ -12,11 +12,11 @@ export default function App() {//Export App function component
   return (
   <>
   {/* App container */}
-    <Container id='container'>
+    <Container id='container' role='main' aria-label="Main content">
         {/* Render the header component */}
         <Header />   
         {/* Section 1 */}
-        <section id='section1'>
+        <section id='section1' role='region' aria-label="API Call Section">
           {/* Render the Apicall component */}
           <Apicall />
         </section>

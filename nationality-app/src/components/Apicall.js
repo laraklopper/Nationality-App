@@ -1,4 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';// Import the React module to use React functionalities
+import './APIForm.css';//Import Apicall CSS file
+import './Output.css';//Import Output CSS file
 import Button from 'react-bootstrap/Button';//Import Button component from bootstrap library
 import Form from 'react-bootstrap/Form';//Import Form component from bootstrap library
 import Row from 'react-bootstrap/Row';
