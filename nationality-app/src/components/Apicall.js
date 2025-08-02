@@ -35,10 +35,14 @@ export default function Apicall() {//Export the Apicall component
             // Make the API call using the Fetch API and the retrieved name value
         };
 
-             useEffect(()=>{
-                 inputRef.current.focus()// Use the useEffect hook to focus on the input element when the component mounts
+        //===============FOCUS ON INPUT================
+        // Use the useEffect hook to focus on the input element when the component mounts
+        useEffect(()=>{
+            inputRef.current.focus()// Use the useEffect hook to focus on the input element when the component mounts
         },[])
 
+    //===============JSX RENDERING================
+     // Render the component's JSX
 
     return (
         <div id='apiCallContainer' className='d-flex flex-column align-items-center justify-content-center'>
@@ -47,7 +51,6 @@ export default function Apicall() {//Export the Apicall component
                     <Col  className='col'>
                     <label className='label' id='nameLabel'>Enter a name to get the country</label>
                     </Col>
-                    
                         {/* Display the 'country' state variable in a paragraph element */}
                 </Row>
                 <Row>

@@ -11,14 +11,16 @@ export default function App() {//Export App function component
   
   return (
   <>
-  
+  {/* App container */}
     <Container id='container'>
+        {/* Render the header component */}
         <Header />   
+        {/* Section 1 */}
         <section id='section1'>
+          {/* Render the Apicall component */}
           <Apicall />
         </section>
         </Container>
-  
 </>
   );
 }

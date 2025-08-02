@@ -11,16 +11,24 @@ html, body {
   display: flex;
   justify-content: center;
 }
+/* LAYOUT */
 #container{
-  display: grid;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   background-color: #779F28;
   padding: 10px;
-  margin: 10px 0px 0px 0px;
+  margin: 10px ;
+}
+#headerRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
 }
 /* Header */
 #header{
-  width: 100%;
+  width: 600px;
   margin-top: 10px;
   margin-bottom: 10px;
   margin-left: 5px;
@@ -30,40 +38,26 @@ html, body {
   display: flex;
   justify-content: center;
   background-color: #98CA33;
-  
-
+}
+#mainTitle {
+  text-align: center;
+  margin: 5px;
+  color: #404040;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 800;
 }
 /* Section1 */
+
 #section1{
   text-align: center;
-  margin-top: 10px;
-  background-color: #779F28;
+  display: flex;
+  justify-content: center;
+  margin: 10px 5px 10px 5px;
+  background-color: #455D17;
   padding: 15px;
 }
-.h1{
-  text-align: center;
- margin: 5px;
- color: #404040;
-font-family: "Roboto Mono", monospace;
-}
 
-.output{
-  margin: 10px 0px 0px 0px;
-  padding: 10px;
-  width: 100%;  
-  font-family: "Roboto Mono", monospace;
-  font-weight: 700;
-  text-align: center;
-}
-/* Button */
-#fetchButton{
-  width: 180px;
-  margin: 10px;
-  padding: 10px;
-  color: #000000;
-  font-family: "Funnel Display", sans-serif;
-  font-weight: 700;
-}
+/* API FORM */
 #apiForm{
   width: 500px;
   display: flex;
@@ -72,6 +66,7 @@ font-family: "Roboto Mono", monospace;
   flex-direction: column;
   padding: 10px;
   margin: 10px 0px 10px 0px;
+  border-radius: 5px;
   background-color: #98CA33;
 }
 #nameInput{
@@ -92,6 +87,15 @@ font-family: "Roboto Mono", monospace;
   font-weight: 700;
   margin-bottom: 10px;
 }
+/* Buttons */
+#fetchButton {
+  width: 180px;
+  margin: 10px;
+  padding: 10px;
+  color: #000000;
+  font-family: "Funnel Display", sans-serif;
+  font-weight: 700;
+}
 /* OUTPUT */
 .h2{
   text-transform: uppercase;
@@ -104,6 +108,14 @@ font-family: "Roboto Mono", monospace;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 500px;  
+  width: 600px;
   justify-content: center;
+}
+.output {
+  margin: 10px 0px 0px 0px;
+  padding: 10px;
+  width: 100%;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 700;
+  text-align: center;
 }

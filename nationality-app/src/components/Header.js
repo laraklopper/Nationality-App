@@ -7,10 +7,15 @@ export default function Header() {//Export Header function component
 
   //===============JSX RENDERING================
   return (
-    <header id='header' role='banner'>
-        <Row id='headerRow'>
-          <Col id='headerCol'><h1 className='h1'>NATIONALITY API</h1></Col>
-        </Row>
+    // Render a header element with an id and role
+    <Row id='headerRow' aria-labelledby="main-title">
+    <header id='header' role='banner' aria-label="Main header">
+     
+          <Col id='headerCol'>
+          <h1 className='h1' id="mainTitle">NATIONALITY API</h1>
+          </Col>
+       
     </header>
+     </Row >
   )
 }
