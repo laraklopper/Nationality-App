@@ -1,4 +1,5 @@
 import React from 'react'// Import the React module to use React functionalities
+import './Header.css';//Import Header CSS file
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
