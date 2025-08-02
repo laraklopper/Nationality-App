@@ -42,19 +42,25 @@ html, body {
 .h1{
   text-align: center;
  margin: 5px;
- color: #404040
-
+ color: #404040;
+font-family: "Roboto Mono", monospace;
 }
 
 .output{
-  margin-top: 25px;
+  margin: 10px 0px 0px 0px;
+  padding: 10px;
+  width: 100%;  
+  font-family: "Roboto Mono", monospace;
+  font-weight: 700;
 }
 /* Button */
 #fetchButton{
   width: 180px;
   margin: 10px;
   padding: 10px;
+  color: #000000;
   font-family: "Funnel Display", sans-serif;
+  font-weight: 700;
 }
 #apiForm{
   width: 500px;
@@ -64,4 +70,16 @@ html, body {
   flex-direction: column;
   padding: 10px;
   background-color: #98CA33;
+}
+#nameInput{
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Funnel Display", sans-serif;
+  font-weight: 700;
+  border: #000000 2px solid;
 }

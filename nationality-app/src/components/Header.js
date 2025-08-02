@@ -8,7 +8,7 @@ export default function Header() {//Export Header function component
   return (
     <header id='header'>
         <div id='heading'>
-            <h1 className='h1'>{title}</h1>
+         <h1 className='h1'>NATIONALITY API</h1>
         </div>
     </header>
   )

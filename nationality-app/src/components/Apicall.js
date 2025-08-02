@@ -51,14 +51,20 @@ export default function Apicall() {//Export the Apicall component
                                 ref={inputRef}
                                 autoComplete='off'
                                 aria-label='name-input'
+                                required
+                                id='nameInput'
+                                aria-required='true'
+                                placeholder='Enter a name'
                               />
                         </Form.Group>
                         <Button 
                             type='button' 
                             variant='primary'
-                            className="btn btn-info" 
                             id='fetchButton'
-                            onClick={fetchData}>
+                            onClick={fetchData}
+                            aria-label='fetch-button'
+                           
+                            >
                                 FETCH DATA
                         </Button>
                 </Form>
