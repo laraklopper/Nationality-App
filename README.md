@@ -30,7 +30,6 @@ To start the application use `npm start` in the `terminal` (or Command Line Inte
 npm start 
 ```
 ## FEATURES
-
 ### STYLING
 
 The application uses bootstrap and google fonts and css for styling.
