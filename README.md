@@ -30,6 +30,11 @@ To start the application use `npm start` in the `terminal` (or Command Line Inte
 npm start 
 ```
 ## FEATURES
+
+### ARIA-ATTRIBUTES
+
+The application uses `ARIA` (`Accessible Rich Internet Applications`) attributes to make the application more user freindly for users using accessibility for users relying on assistive technologies.
+
 ### STYLING
 
 The application uses bootstrap and google fonts and css for styling.
