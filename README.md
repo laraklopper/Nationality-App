@@ -51,29 +51,23 @@ In the `/public/index.html` file
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&family=Martian+Mono:wdth,wght@75,100..800&family=Permanent+Marker&family=Signika:wght@300..700&display=swap" rel="stylesheet">
 
+
 ```
-**Martian Mono: CSS class for a variable style**
+##### GOOGLE FONTS USED
+- Martian Mono: CSS class for a variable style
+- Alkatra: CSS class for a variable style
+- Permanent Marker: CSS class
+- Signika: CSS class for a variable style
 ```
+<!-- Martian Mono -->
   font-family: "Martian Mono", monospace;
-```
-Used in the output
-**Alkatra: CSS class for a variable style**
-```
-font-family: "Alkatra", system-ui;
-```
-Used in the header
-
-**Permanent Marker: CSS class**
-```
+<!-- Alkatra  -->
+  font-family: "Alkatra", system-ui;
+<!-- Permanent Marker -->
   font-family: "Permanent Marker", cursive;
+<!-- Signika -->
+  font-family: "Signika", sans-serif;
 ```
-Used in the output heading
-**Signika: CSS class for a variable style**
-
-```
-    font-family: "Signika", sans-serif;
-```
-Used in form tags
 ## REFERENCES
 
 - https://nationalize.io/
@@ -84,3 +78,5 @@ Used in form tags
 - https://react.dev/blog/2023/03/16/introducing-react-dev
 - https://www.w3schools.com/tags/tag_meta.asp
 - https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Guides
+- https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes
+- https://www.geeksforgeeks.org/html/how-to-use-aria-attributes-to-enhance-accessibility-in-html/
