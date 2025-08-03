@@ -1,6 +1,13 @@
 # Accessible Rich Internet Applications (ARIA)
 
+#### **INTRODUCTION**
 The domain of web accessibility defines how to make web content usable by persons with disabilities. Accessible Rich Internet Applications (ARIA) define ways to make the web more accessible to people with disabilities. ARIA attributes improve accessibility for users relying on assistive technologies. Many standard HTML elements have built-in accessibility features. However, when developers create custom components (like modals, tabs, sliders, etc.), these features might not be present. 
+
+## TABLE OF CONTENTS
+1. [KEY ARIA ROLES](#key-aria-roles)
+2. [COMMON ARIA ATTRIBUTES](#common-aria-attributes)
+3. [REFERENCES](#references)
+
 
 ARIA bridges this gap by:
 
@@ -8,7 +15,7 @@ ARIA bridges this gap by:
 - Enhancing the usability of interactive elements for users with disabilities.
 - Enabling dynamic content updates to be communicated effectively.
 
-##  Key ARIA Roles
+##  KEY ARIA ROLES
 
 ARIA defines a number of **roles** that describe the type of widget presented to the user:
 
@@ -20,7 +27,7 @@ ARIA defines a number of **roles** that describe the type of widget presented to
 | `alert` | Marks a message that should grab the user’s attention |
 | `tooltip` | Describes a pop-up that provides more information |
 
-## Common ARIA Attributes
+## COMMON ARIA ATTRIBUTES
 
 | Attribute | Use |
 |-----------|-----|
