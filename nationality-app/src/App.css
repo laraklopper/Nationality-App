@@ -13,8 +13,10 @@ html, body {
   justify-content: center;
 }
 #root{
-      width: fit-content;
-        height: fit-content;
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  height: fit-content;
 }
 /* LAYOUT */
 #container{
@@ -34,5 +36,6 @@ html, body {
   margin: 10px 5px 10px 5px;
   background-color: #455D17;
   padding: 15px;
+  width: fit-content;
 }
 
