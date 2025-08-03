@@ -3,7 +3,7 @@
 ## TABLE OF CONTENTS
 1. [WHAT_THE_APPLICATION_DOES](#what-the-application-does)
 2. [HOW_TO_START_THE_APPLICATION](#how-to-start-the-application)
-3. [STYLING](#styling)
+3. [FEATURES](#features)
 4. [REFERENCES](#references)
  
 ## WHAT THE APPLICATION DOES
@@ -13,7 +13,7 @@ The application only includes front-end code using react.js
 npx create-react-app@latest nationality-app
 ```
 The application  uses `https://nationalize.io/` to make a third party API call which provides data relating to the nationality of the name entered in the form.
-The application also includes  Accessible Rich Internet Applications (ARIA)`  attributes to make the application more accessible.
+
 
 ## HOW TO START THE APPLICATION
 
@@ -29,8 +29,9 @@ To start the application use `npm start` in the `terminal` (or Command Line Inte
 ```
 npm start 
 ```
-
-## STYLING
+## FEATURES
+## 
+### STYLING
 
 The application uses bootstrap and google fonts and css for styling.
 

@@ -1,7 +1,9 @@
 # Accessible Rich Internet Applications (ARIA)
 
 #### **INTRODUCTION**
-The domain of web accessibility defines how to make web content usable by persons with disabilities. Accessible Rich Internet Applications (ARIA) define ways to make the web more accessible to people with disabilities. ARIA attributes improve accessibility for users relying on assistive technologies. Many standard HTML elements have built-in accessibility features. However, when developers create custom components (like modals, tabs, sliders, etc.), these features might not be present. 
+
+The domain of web accessibility defines how to make web content usable by persons with disabilities. Accessible Rich Internet Applications (ARIA) define ways to make the web more accessible to people with disabilities. ARIA attributes improve accessibility for users relying on assistive technologies.
+
 
 ## TABLE OF CONTENTS
 1. [KEY ARIA ROLES](#key-aria-roles)
@@ -37,6 +39,39 @@ ARIA defines a number of **roles** that describe the type of widget presented to
 | `aria-expanded` | Indicates the expanded/collapsed state |
 | `aria-controls` | Identifies the elements controlled by a widget |
 | `aria-pressed` | State of a toggle button |
+
+### EXAMPLES OF ARIA ATTRIBUTES BEING USED
+
+```javascript
+    <Row id='headerRow' aria-labelledby="main-title">
+    <header id='header' role='banner' aria-label="Main header">
+      {/* Render a column with an id and className */}
+          <Col id='headerCol'>
+            <h1  id="mainTitle" aria-label='mainTitle'>
+              NATIONALITY API
+            </h1>
+          </Col>
+    </header>
+     </Row >
+```
+```javascript
+<label htmlFor='nameInput' className='label' id='nameLabel'>
+         <p id='labelText'>Enter a name to get the country</p>
+                <input
+                     type='text'
+                     value={name}
+                     onChange={(e) => setName(e.target.value)}
+                     ref={inputRef}
+                        autoComplete='off'
+                        required
+                        id='nameInput'
+                        aria-label='name-input'
+                        aria-required='true'        
+                        placeholder='Enter a name'
+                        />
+                        </label>
+                       
+```
 
 ## REFERENCES
 

@@ -1,5 +1,6 @@
 import React from 'react'// Import the React module to use React functionalities
 import './App.css';//Import main CSS file
+// Components
 import Header from './components/Header';//Import Header component
 import Apicall from './components/Apicall';//Import Apicall component
 import Container from 'react-bootstrap/Container';
@@ -16,7 +17,7 @@ export default function App() {//Export App function component
         {/* Render the header component */}
         <Header />   
         {/* Section 1 */}
-        <section id='section1' role='region' aria-label="API Call Section">
+        <section id='section1' aria-label="API Call Section">
           {/* Render the Apicall component */}
           <Apicall />
         </section>
